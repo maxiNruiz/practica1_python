@@ -10,7 +10,7 @@ print()
 for categoria in words:
     print(categoria)
 cat = input("elija una: ")
-valores = [random.choice(words[cat])]
+valores = random.sample(words[cat], len(words[cat]))
 for word in valores:
     guessed = []
     puntaje = 0
